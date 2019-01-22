@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        var accessTokenObj = window.location.hash;
+        var accessToken = accessTokenObj.split("=")[1];
+        console.log(accessToken);
+
+        $.ajax({
+          url: "https://api.instagram.com/v1/users/self/media/recent?access_token=" + accessToken,
+        })
+        .done(function( data ) {
+          $("#imgId").attr('src', data.data[0].images.standard_resolution.url);
+          $("#imgLink").attr('href',data.data[0].link);
+          $("#captionText").html(data.data[0].caption.text);
+        }); 
+      });
+    </script>
+  </head>
+  <body>
+      <div><h1>ON My TODAY's instagram</h1></div>
+      <div>
+        <h3>
+          <a href="javascript:void(0);" target="_blank" id="imgLink">
+            <img src="" id="imgId"/>
+          </a>
+        </h3>
+        <br/>
+        <h4>Caption: <i><span id="captionText"></span></i></h4>
+      </div>
+  </body>
+</html>
