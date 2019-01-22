@@ -1,0 +1,28 @@
+{
+  "name": "nagsinstapicofday",
+  "version": "1.0.0",
+  "description": "this simple app will return with a simple algorithm one top post from the people/pages I am following.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himelnagrana/nagsInstaPicOfDay.git"
+  },
+  "keywords": [
+    "Hapi.js",
+    "instagram",
+    "API",
+    "instapic"
+  ],
+  "author": "Himel Nag Rana <hnrana@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himelnagrana/nagsInstaPicOfDay/issues"
+  },
+  "homepage": "https://github.com/himelnagrana/nagsInstaPicOfDay#readme",
+  "dependencies": {
+    "hapi": "^17.8.1"
+  }
+}
