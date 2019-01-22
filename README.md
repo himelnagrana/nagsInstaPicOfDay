@@ -17,4 +17,5 @@ module.exports = {
     node index.js
 ```
 
-- After authentication with your instagram credential (it is needed only once) - you will see the last pic posted by you.
+- After authentication with your instagram credential (it is needed only once) - you will see the last pic posted by you. like:
+ ![](https://user-images.githubusercontent.com/1459839/51519588-9a342580-1e4b-11e9-9fe6-4d8e697064be.png)
