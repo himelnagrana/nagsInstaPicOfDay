@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/himelnagrana/nagsInstaPicOfDay#readme",
   "dependencies": {
-    "hapi": "^17.8.1"
+    "axios": "^0.18.0",
+    "hapi": "^17.8.1",
+    "inert": "^5.1.2"
   }
 }
